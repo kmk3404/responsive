@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+#wrap{width: 100%; margin: 0 auto;}
+header{background: #97C4B8; height: 150px;}
+aside{float: left; background: #187498; height: 700px; width: 30%;}
+section{float: left; background: #827397; height: 700px; width: 40%;}
+article{float: left; background: #85586F; height: 700px; width: 30%;}
+footer{float: left; background: #EFD345; height: 150px; width: 100%;}
+
+
+/* 화면의 너비가 0 ~ 1200px */
+@media(max-width:1200px){
+    aside{width: 40%;}
+    section{width: 60%;}
+    article{height: 300px; width: 100%;}
+}
+
+/* 화면의 너비가 0 ~ 768px */
+@media(max-width:768px){
+    aside {width: 100%;}
+    section {width: 100%;}
+}
+
+/* 화면의 너비가 0 ~ 480px */
+@media(max-width:480px){
+    header{height: 300px;}
+    aside{height: 300px;}
+    section{height: 300px;}
+}
